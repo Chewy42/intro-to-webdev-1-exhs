@@ -1,8 +1,8 @@
 entrypoint = "index.html"
-modules = ["web"]
+modules = ["nix"]
 
 [nix]
-channel = "stable-24_11"
+channel = "stable-25_05"
 packages = ["static-web-server"]
 
 [deployment]
