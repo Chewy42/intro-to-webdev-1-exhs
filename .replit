@@ -1,5 +1,5 @@
 entrypoint = "index.html"
-modules = ["nix"]
+modules = ["web"]
 
 [nix]
 channel = "stable-25_05"
@@ -18,7 +18,6 @@ mode = "parallel"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-# This is the corrected line:
 args = "static-web-server --root . --port 80"
 
 waitForPort = 80
