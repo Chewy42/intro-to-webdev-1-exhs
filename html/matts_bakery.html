@@ -1,49 +1,65 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Matt's Bakery</title>
+  <link rel="stylesheet" type="text/css" href="../css/matts_bakery.css">
 </head>
+
 <body>
 
-  <h1>Welcome to Matt's Bakery!</h1>
+  <div id="container">
+    <h1 id="mytitle">Welcome to Matt's Bakery!</h1>
 
-  <h2>Our Specialties</h2>
-  <ul>
-    <li>Chocolate Chip Cookies</li>
-    <li>Blueberry Muffins</li>
-    <li>Red Velvet Cake</li>
-  </ul>
+    <div id="specialties-container">
+      <h2>Our Specialties</h2>
+      <ul>
+        <li>Chocolate Chip Cookies</li>
+        <li>Blueberry Muffins</li>
+        <li>Red Velvet Cake</li>
+      </ul>
+    </div>
 
-  <h2>Today's Deals</h2>
-  <ol>
-    <li>Buy 1 get 1 free on all cookies</li>
-    <li>Free coffee with any cake slice</li>
-    <li>20% off on all bread loaves</li>
-  </ol>
+    <div id="deals-container">
+      <h2>Today's Deals</h2>
+      <ol>
+        <li>Buy 1 get 1 free on all cookies</li>
+        <li>Free coffee with any cake slice</li>
+        <li>20% off on all bread loaves</li>
+      </ol>
+    </div>
 
-  <p>We are located at 123 Main St. Drop by for some delicious treats!</p>
+    <img id="business-image" src="https://www.redfin.com/blog/wp-content/uploads/2023/01/Minneapolis-skyline-GI.jpg"
+      alt="Minneapolis Skyline" />
 
-  <a href="">Find us on Facebook</a>
+    <p>We are located at 123 Main St. Drop by for some delicious treats!</p>
 
-  <h2>Contact Us</h2>
-  <form>
-    <p>Name:</p>
-    <input type="text"><br><br>
+    <a href="">Find us on Facebook</a>
 
-    <p>Email:</p>
-    <input type="email"><br><br>
+    <div id="contact-container">
+      <h2>Contact Us</h2>
+      <form>
+        <p>Name:</p>
+        <input type="text"><br><br>
 
-    <p>Message:</p>
-    <input type="text"><br><br>
+        <p>Email:</p>
+        <input type="email"><br><br>
 
-    <p>Favorite Bakery Item:</p>
-    <select>
-      <option value="cookies">Cookies</option>
-      <option value="muffins">Muffins</option>
-      <option value="cake">Cake</option>
-    </select><br><br>
+        <p>Message:</p>
+        <input type="text"><br><br>
 
-    <button type="submit">Send</button>
+        <p>Favorite Bakery Item:</p>
+        <select>
+          <option value="cookies">Cookies</option>
+          <option value="muffins">Muffins</option>
+          <option value="cake">Cake</option>
+        </select><br><br>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
 
 </body>
+
 </html>

@@ -1,0 +1,27 @@
+#mytitle {
+  color: blue;
+}
+
+#container {
+  background-color: lightblue;
+  width: 900px;
+  height: 100%;
+}
+
+#specialties-container {
+  background-color: yellow;
+}
+
+#deals-container {
+  background-color: lightgreen;
+}
+
+#business-image {
+  width: 250px;
+  height: 250px;
+}
+
+#contact-container {
+  background-color: lightgrey;
+  text-align: center;
+}
