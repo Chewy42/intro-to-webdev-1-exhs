@@ -1,0 +1,30 @@
+[general]
+root = "./"
+port = 80
+# Keep compression on; not related to cache freshness
+compression = true
+# Ensure the server emits headers we define below
+cache-control-headers = true
+
+[advanced]
+
+# Always revalidate HTML and the site root
+[[advanced.headers]]
+source = "/"
+[advanced.headers.headers]
+Cache-Control = "no-cache, no-store, must-revalidate"
+Pragma = "no-cache"
+Expires = "0"
+
+[[advanced.headers]]
+source = "**/*.html"
+[advanced.headers.headers]
+Cache-Control = "no-cache, no-store, must-revalidate"
+Pragma = "no-cache"
+Expires = "0"
+
+# Make CSS/JS revalidate immediately during dev
+[[advanced.headers]]
+source = "**/*.{css,js}"
+[advanced.headers.headers]
+Cache-Control = "max-age=0, must-revalidate"

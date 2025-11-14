@@ -41,3 +41,13 @@
   margin-top: auto;
   margin-bottom: auto;
 }
+
+#truck-image {
+  width: 500px;
+  height: 250px;
+}
+
+#great-grandfather-image {
+  width: 200px;
+  height: 300px;
+}
