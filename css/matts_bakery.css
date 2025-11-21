@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 #mytitle {
   color: blue;
 }
@@ -30,12 +35,12 @@
 #navbar {
   width: 100%;
   height: 50px;
-  background-color: blue;
+  background-color: #899dd7;
   display: flex;
 }
 
 .navbar-link {
-  color: white;
+  color: black;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -51,4 +56,48 @@
 #great-grandfather-image {
   width: 200px;
   height: 300px;
+}
+
+#homepage-container {
+  width: 100vw;
+  height: 75vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#homepage-title {
+  text-align: center;
+  font-size: 80px;
+}
+
+.homepage-paragraph {
+  text-align: center;
+}
+
+#homepage-video {
+  width: 640px;
+  height: 480px;
+}
+
+#homepage-container-2 {
+  width: 100vw;
+  height: 30vh;
+  background-color: #899dd7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+
+#events-title {
+  font-size: 80px;
+}
+
+.event-list-item {
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
