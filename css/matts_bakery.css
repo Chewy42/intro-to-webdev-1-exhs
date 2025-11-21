@@ -101,3 +101,52 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+#homepage-container-3 {
+  width: 100vw;
+  height: 75vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#homepage-title-3 {
+  text-align: center;
+  font-size: 80px;
+}
+
+.homepage-paragraph-3 {
+  text-align: center;
+}
+
+#homepage-video-3 {
+  width: 640px;
+  height: 480px;
+}
+
+#homepage-container-4 {
+  width: 100vw;
+  height: 75vh;
+  background-color: #899dd7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#homepage-title-4 {
+  text-align: center;
+  font-size: 80px;
+}
+
+#homepage-video-5 {
+  width: 640px;
+  height: 480px;
+}
+
+#homepage-video-6 {
+  width: 640px;
+  height: 480px;
+}
