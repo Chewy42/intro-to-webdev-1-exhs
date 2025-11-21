@@ -3,20 +3,17 @@ modules = ["web"]
 
 [nix]
 channel = "stable-25_05"
-packages = ["static-web-server"]
 
 [workflows]
-runButton = "Serve static"
+runButton = "Run Live Server"
 
 [[workflows.workflow]]
-name = "Serve static"
+name = "Run Live Server"
 mode = "parallel"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-# Use sws.toml to disable caching during dev
-args = "static-web-server --root . --port 80 --config-file ./sws.toml"
-
+args = "live-server --port=80 --no-browser --entry-file=index.html"
 waitForPort = 80
 
 [[ports]]
@@ -27,32 +24,15 @@ externalPort = 80
 publicDir = "/"
 deploymentTarget = "static"
 
-# Safe defaults for when you later publish: ensure fresh HTML
 [[deployment.responseHeaders]]
 path = "/*.html"
 name = "Cache-Control"
 value = "no-cache, no-store, must-revalidate"
 
 [[deployment.responseHeaders]]
-path = "/*.html"
-name = "Pragma"
-value = "no-cache"
-
-[[deployment.responseHeaders]]
-path = "/*.html"
-name = "Expires"
-value = "0"
-
-# Optional: short/zero cache for CSS/JS when published without hashing
-[[deployment.responseHeaders]]
-path = "/**/*.{css,js}"
+path = "/*.{css,js}"
 name = "Cache-Control"
 value = "max-age=0, must-revalidate"
-
-# SPA-friendly optional rewrite (remove if not an SPA)
-# [[deployment.rewrites]]
-# from = "/*"
-# to = "/index.html"
 
 [agent]
 expertMode = true
